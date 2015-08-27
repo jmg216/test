@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.isa.com/" xmlns:tns="http://ws.isa.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="guardar" type="tns:guardar"/>
+
+  <xs:element name="guardarResponse" type="tns:guardarResponse"/>
+
+  <xs:complexType name="guardar">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="cedula" type="xs:string" minOccurs="0"/>
+      <xs:element name="documento" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="guardarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
